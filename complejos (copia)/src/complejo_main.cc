@@ -30,7 +30,6 @@ int main (int argc, char* argv[]) {
   solucion.Print();
   solucion.Multiplicate(complejo1, complejo2);
   solucion.Print();
-  
 
   return 0;
 }

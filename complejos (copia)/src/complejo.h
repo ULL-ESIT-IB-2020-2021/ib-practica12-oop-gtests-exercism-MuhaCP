@@ -25,9 +25,10 @@ class Complejo{
   void Print();
   void SetComplex(double real_, double imaginario_);
   int GetReal() { return real_; }
-  int GetImaginario() { return imaginario_; }
+  int GetImaginary() { return imaginario_; }
   void Add(Complejo complejo1, Complejo complejo2);
   void Sub(Complejo complejo1, Complejo complejo2);
   void Multiplicate(Complejo complejo1, Complejo complejo2);
-  friend bool operator* (Complejo &complejo, int real);
+  friend Complejo operator* (Complejo &complejo, int real);
+
 };

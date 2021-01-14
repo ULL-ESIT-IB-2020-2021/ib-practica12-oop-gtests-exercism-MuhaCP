@@ -41,4 +41,10 @@ void Complejo::Multiplicate(Complejo complejo1, Complejo complejo2){
   imaginario_ = complejo1.real_ * complejo2.imaginario_ + complejo1.imaginario_ * complejo2.real_;
 }
 
+Complejo operator* (Complejo &complejo1, int numero_real){
+    int real_ = complejo1.real_ * numero_real;
+    int imaginario_ = complejo1.imaginario_ * numero_real;
+    Complejo complejo_suma(real_, imaginario_);
+    return complejo_suma;
+  }
 
