@@ -21,7 +21,7 @@
   
 int main (int argc, char* argv[]) {
   
-  Complejo complejo1{4, 5}, complejo2{7, -8};
+  Complejo complejo1{7, 6}, complejo2{-5, 1};
   Complejo solucion{0,0};
 
   solucion.Add(complejo1, complejo2);
